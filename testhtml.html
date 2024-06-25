@@ -1,2 +1,37 @@
-  <h1>testing</h1>
-  
+   <lightning-card title="Admin Product Configurator">
+        <div class="slds-m-around_medium">
+            <template if:true={products}>
+                <lightning-combobox
+                    name="product"
+                    label="Select Product"
+                    value={selectedProduct}
+                    placeholder="Select a Product"
+                    options={productOptions}
+                    onchange={handleProductChange}>
+                </lightning-combobox>
+                
+                <template if:true={selectedProductData}>
+                    <lightning-input
+                        name="displayLabel"
+                        label="Display Label"
+                        value={selectedProductData.displayLabel}
+                        onchange={handleInputChange}>
+                    </lightning-input>
+                    <lightning-input
+                        name="attributeDefaultValue"
+                        label="Attribute Default Value"
+                        value={selectedProductData.attributeDefaultValue}
+                        onchange={handleInputChange}>
+                    </lightning-input>
+                    <lightning-input
+                        type="color"
+                        name="backgroundColor"
+                        label="Background Color"
+                        value={selectedProductData.backgroundColor}
+                        onchange={handleInputChange}>
+                    </lightning-input>
+                    <lightning-button variant="brand" label="Save" onclick={handleSave}></lightning-button>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
