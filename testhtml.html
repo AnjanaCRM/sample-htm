@@ -1,6 +1,5 @@
    <lightning-card title="Admin Product Configurator">
         <div class="slds-m-around_medium">
-            <template >
                 <lightning-combobox
                     name="product"
                     label="Select Product"
@@ -10,7 +9,7 @@
                     onchange={handleProductChange}>
                 </lightning-combobox>
                 
-                <template if:true={selectedProductData}>
+<!--                 <template if:true={selectedProductData}>
                     <lightning-input
                         name="displayLabel"
                         label="Display Label"
@@ -31,7 +30,7 @@
                         onchange={handleInputChange}>
                     </lightning-input>
                     <lightning-button variant="brand" label="Save" onclick={handleSave}></lightning-button>
-                </template>
-            </template>
+                </template> -->
+          
         </div>
     </lightning-card>
