@@ -1,0 +1,31 @@
+:host {
+    display: block;
+    margin: 20px;
+}
+
+.slds-card__header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    border: 1px solid red ;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.combo-box {
+    margin-top: 15px;
+    border: 1px solid #d8dde6;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.slds-p-around_medium {
+    padding: 1rem;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+}
